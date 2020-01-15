@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>Tipo de datos</title>
+    </head>
+    <body>
+        <script>
+            var x = 3+2+"Luis" + 15;//en mucho lenguaje de programacion esto de error pero en Javascript lo ve como que el numero es tambiuen un texto
+            //Javascript va evaluando de izquierda a derecha
+            alert(x);
+
+
+            //cadena o string
+
+            var cadena ="Luis",
+                cadena2='Eduardo';
+            alert(cadena+cadena2);
+
+            //numeros
+            var entero = 2,
+                decimal = 3.56,
+                cientifica = 2e5;//lo que va despues de la e son los 0 que tiene el numero que esta ante de la e(se puede usar el numero negativo) .
+            alert(entero + decimal);
+            alert(cientifica);
+
+            //Booleanos son cierto o falso y se utiliza para evaluar condiciones
+            var cierto = true,
+                falso = false;
+                alert(cierto);
+                alert(falso);
+            
+            //array -> un conjunto de valores
+            var lista = [1,"Luis",3,4,5,6];
+            alert(lista[0]);//muestra el uno
+            alert(lista[1]);//muestra el dos
+
+            //Objetos
+            var animal = {nombre:"Byron", tipo:"perro", raza:"ninguna", edad: 1};
+
+            //Operador typeof y es para saber de que tipo es la variable
+            alert(typeof lista);//ojo cuando es una lista se considera como objeto pero si fuera la var cierto devulve Booleano
+
+            //Undefined
+            var objetoSinDefinir ;
+            alert(objetoSinDefinir);
+
+            //Null 
+            var animal = null;//animal ya era un objeto 
+            alert("Animal: " + animal + " tipo: "+ typeof animal);//devulve null y tipo objeto
+            
+            // Nulos vs N o definido
+            typeof undefined;//devulve undefined
+            typeof null;//Devulve el objeto
+            null === undefined;//devulve falso
+            null == undefined;//devulve true porque almacena lo mismo (nada)
+            
+
+
+
+
+        </script>
+    </body>
+</html>

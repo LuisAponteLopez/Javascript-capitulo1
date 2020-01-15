@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>Funcion Anonima</title>
+    </head>
+    <body>
+        <script>
+        
+        //funcion anonima
+        var producto = function(a,b){return a*b; }
+       var multiplicacion = producto(3,3);
+       alert(multiplicacion);
+
+       //el contructor function()
+       var miFuncion = new Function("a","b","return a*b");
+       var resultado = miFuncion(5,7);
+       alert(resultado)
+
+       // funciones anonima autoinvocada
+       (function (){alert('hola')}());
+
+        </script>
+    </body>
+</html>
